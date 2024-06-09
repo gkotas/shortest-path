@@ -1,5 +1,5 @@
-# X Y Z	X Y Z	menuOption menuTarget objectID	Skill requirements	Item requirements	Quest	Travel time	Info
-# Brimhaven							
+# Origin	Destination	menuOption menuTarget objectID	Skill Requirements	Item Requirements	Quest	Wait	Display Info
+# Brimhaven
 2760 3238 0	2792 3414 0	Charter Trader Crewmember 1330		460 Coins		6	Catherby
 2760 3238 0	2589 2851 0	Charter Trader Crewmember 1330		680 Coins		6	Corsair Cove
 2760 3238 0	1496 3403 0	Charter Trader Crewmember 1330		2200 Coins		6	Land's End
@@ -12,8 +12,8 @@
 2760 3238 0	2142 3122 0	Charter Trader Crewmember 1330		3200 Coins	Regicide	6	Port Tyras
 2760 3238 0	3001 3032 0	Charter Trader Crewmember 1330		400 Coins	The Grand Tree	6	Shipyard
 2760 3238 0	2157 3330 0	Charter Trader Crewmember 1330		3450 Coins	Song of the Elves	6	Prifddinas
-							
-# Catherby							
+
+# Catherby
 2792 3414 0	2760 3238 0	Charter Trader Crewmember 1330		480 Coins		6	Brimhaven
 2792 3414 0	2589 2851 0	Charter Trader Crewmember 1330		1000 Coins		6	Corsair Cove
 2792 3414 0	1496 3403 0	Charter Trader Crewmember 1330		2200 Coins		6	Land's End
@@ -26,8 +26,8 @@
 2792 3414 0	2142 3122 0	Charter Trader Crewmember 1330		3200 Coins	Regicide	6	Port Tyras
 2792 3414 0	3001 3032 0	Charter Trader Crewmember 1330		1600 Coins	The Grand Tree	6	Shipyard
 2792 3414 0	2157 3330 0	Charter Trader Crewmember 1330		3560 Coins	Song of the Elves	6	Prifddinas
-							
-# Corsair Cove							
+
+# Corsair Cove
 2589 2851 0	2760 3238 0	Charter Trader Crewmember 1330		680 Coins		6	Brimhaven
 2589 2851 0	2792 3414 0	Charter Trader Crewmember 1330		1000 Coins		6	Catherby
 2589 2851 0	1496 3403 0	Charter Trader Crewmember 1330		1800 Coins		6	Land's End
@@ -40,8 +40,8 @@
 2589 2851 0	2142 3122 0	Charter Trader Crewmember 1330		3200 Coins	Regicide	6	Port Tyras
 2589 2851 0	3001 3032 0	Charter Trader Crewmember 1330		800 Coins	The Grand Tree	6	Shipyard
 2589 2851 0	2157 3330 0	Charter Trader Crewmember 1330		1420 Coins	Song of the Elves	6	Prifddinas
-							
-# Land's End							
+
+# Land's End
 1496 3403 0	2760 3238 0	Charter Trader Crewmember 1330		2200 Coins		6	Brimhaven
 1496 3403 0	2792 3414 0	Charter Trader Crewmember 1330		2200 Coins		6	Catherby
 1496 3403 0	2589 2851 0	Charter Trader Crewmember 1330		1800 Coins		6	Corsair Cove
@@ -52,8 +52,8 @@
 1496 3403 0	2142 3122 0	Charter Trader Crewmember 1330		3200 Coins	Regicide	6	Port Tyras
 1496 3403 0	3001 3032 0	Charter Trader Crewmember 1330		2800 Coins	The Grand Tree	6	Shipyard
 1496 3403 0	2157 3330 0	Charter Trader Crewmember 1330		1500 Coins	Song of the Elves	6	Prifddinas
-							
-# Musa Point							
+
+# Musa Point
 2954 3158 0	2760 3238 0	Charter Trader Crewmember 1330		200 Coins		6	Brimhaven
 2954 3158 0	2792 3414 0	Charter Trader Crewmember 1330		480 Coins		6	Catherby
 2954 3158 0	2589 2851 0	Charter Trader Crewmember 1330		800 Coins		6	Corsair Cove
@@ -65,8 +65,8 @@
 2954 3158 0	2142 3122 0	Charter Trader Crewmember 1330		3200 Coins	Regicide	6	Port Tyras
 2954 3158 0	3001 3032 0	Charter Trader Crewmember 1330		200 Coins	The Grand Tree	6	Shipyard
 2954 3158 0	2157 3330 0	Charter Trader Crewmember 1330		4400 Coins	Song of the Elves	6	Prifddinas
-							
-# Mos Le'Harmless							
+
+# Mos Le'Harmless
 3671 2931 0	2760 3238 0	Charter Trader Crewmember 1330		1450 Coins		6	Brimhaven
 3671 2931 0	2792 3414 0	Charter Trader Crewmember 1330		1250 Coins		6	Catherby
 3671 2931 0	2589 2851 0	Charter Trader Crewmember 1330		2040 Coins		6	Corsair Cove
@@ -78,8 +78,8 @@
 3671 2931 0	2142 3122 0	Charter Trader Crewmember 1330		1600 Coins	Regicide	6	Port Tyras
 3671 2931 0	3001 3032 0	Charter Trader Crewmember 1330		550 Coins	The Grand Tree	6	Shipyard
 3671 2931 0	2157 3330 0	Charter Trader Crewmember 1330		2475 Coins	Song of the Elves	6	Prifddinas
-							
-# Port Khazard							
+
+# Port Khazard
 2674 3144 0	2760 3238 0	Charter Trader Crewmember 1330		1600 Coins		6	Brimhaven
 2674 3144 0	2792 3414 0	Charter Trader Crewmember 1330		1600 Coins		6	Catherby
 2674 3144 0	2589 2851 0	Charter Trader Crewmember 1330		600 Coins		6	Corsair Cove
@@ -92,8 +92,8 @@
 2674 3144 0	2142 3122 0	Charter Trader Crewmember 1330		3200 Coins	Regicide	6	Port Tyras
 2674 3144 0	3001 3032 0	Charter Trader Crewmember 1330		1600 Coins	The Grand Tree	6	Shipyard
 2674 3144 0	2157 3330 0	Charter Trader Crewmember 1330		2800 Coins	Song of the Elves	6	Prifddinas
-							
-# Port Phasmatys							
+
+# Port Phasmatys
 3702 3503 0	2760 3238 0	Charter Trader Crewmember 1330		2900 Coins		6	Brimhaven
 3702 3503 0	2792 3414 0	Charter Trader Crewmember 1330		3500 Coins		6	Catherby
 3702 3503 0	2589 2851 0	Charter Trader Crewmember 1330		4040 Coins		6	Corsair Cove
@@ -105,8 +105,8 @@
 3702 3503 0	2142 3122 0	Charter Trader Crewmember 1330		3200 Coins	Regicide	6	Port Tyras
 3702 3503 0	3001 3032 0	Charter Trader Crewmember 1330		3200 Coins	The Grand Tree	6	Shipyard
 3702 3503 0	2157 3330 0	Charter Trader Crewmember 1330		5200 Coins	Song of the Elves	6	Prifddinas
-							
-# Port Piscarilius							
+
+# Port Piscarilius
 1808 3679 0	2760 3238 0	Charter Trader Crewmember 1330		2000 Coins		6	Brimhaven
 1808 3679 0	2792 3414 0	Charter Trader Crewmember 1330		2000 Coins		6	Catherby
 1808 3679 0	2589 2851 0	Charter Trader Crewmember 1330		1500 Coins		6	Corsair Cove
@@ -117,8 +117,8 @@
 1808 3679 0	2142 3122 0	Charter Trader Crewmember 1330		3200 Coins	Regicide	6	Port Tyras
 1808 3679 0	3001 3032 0	Charter Trader Crewmember 1330		2600 Coins	The Grand Tree	6	Shipyard
 1808 3679 0	2157 3330 0	Charter Trader Crewmember 1330		1200 Coins	Song of the Elves	6	Prifddinas
-							
-# Port Sarim							
+
+# Port Sarim
 3038 3192 0	2760 3238 0	Charter Trader Crewmember 1330		1600 Coins		6	Brimhaven
 3038 3192 0	2792 3414 0	Charter Trader Crewmember 1330		1000 Coins		6	Catherby
 3038 3192 0	2589 2851 0	Charter Trader Crewmember 1330		1200 Coins		6	Corsair Cove
@@ -128,8 +128,8 @@
 3038 3192 0	2142 3122 0	Charter Trader Crewmember 1330		3200 Coins	Regicide	6	Port Tyras
 3038 3192 0	3001 3032 0	Charter Trader Crewmember 1330		400 Coins	The Grand Tree	6	Shipyard
 3038 3192 0	2157 3330 0	Charter Trader Crewmember 1330		4800 Coins	Song of the Elves	6	Prifddinas
-							
-# Port Tyras							
+
+# Port Tyras
 2142 3122 0	2760 3238 0	Charter Trader Crewmember 1330		3200 Coins		6	Brimhaven
 2142 3122 0	2792 3414 0	Charter Trader Crewmember 1330		3200 Coins		6	Catherby
 2142 3122 0	2589 2851 0	Charter Trader Crewmember 1330		3200 Coins		6	Corsair Cove
@@ -142,8 +142,8 @@
 2142 3122 0	3038 3192 0	Charter Trader Crewmember 1330		3200 Coins		6	Port Sarim
 2142 3122 0	3001 3032 0	Charter Trader Crewmember 1330		3200 Coins	The Grand Tree	6	Shipyard
 2142 3122 0	2157 3330 0	Charter Trader Crewmember 1330		3200 Coins	Song of the Elves	6	Prifddinas
-							
-# Ship Yard							
+
+# Ship Yard
 3001 3032 0	2760 3238 0	Charter Trader Crewmember 1330		400 Coins		6	Brimhaven
 3001 3032 0	2792 3414 0	Charter Trader Crewmember 1330		1600 Coins		6	Catherby
 3001 3032 0	2589 2851 0	Charter Trader Crewmember 1330		800 Coins		6	Corsair Cove
@@ -156,8 +156,8 @@
 3001 3032 0	3038 3192 0	Charter Trader Crewmember 1330		400 Coins		6	Port Sarim
 3001 3032 0	2142 3122 0	Charter Trader Crewmember 1330		3200 Coins	Regicide	6	Port Tyras
 3001 3032 0	2157 3330 0	Charter Trader Crewmember 1330		4000 Coins	Song of the Elves	6	Prifddinas
-							
-# Prifddinas							
+
+# Prifddinas
 2157 3330 0	2760 3238 0	Charter Trader Crewmember 1330		3450 Coins		6	Brimhaven
 2157 3330 0	2792 3414 0	Charter Trader Crewmember 1330		3560 Coins		6	Catherby
 2157 3330 0	2589 2851 0	Charter Trader Crewmember 1330		1420 Coins		6	Corsair Cove
