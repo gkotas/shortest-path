@@ -33,13 +33,9 @@ public class Transport {
     @Getter
     private List<Quest> quests = new ArrayList<>();
 
-    /** The ids of items required to use this transport. If the player has **any** matching item, this transport is valid */
-    @Getter
-    private List<Integer> itemIdRequirements = new ArrayList<>();
-
     /** The ids of items required to use this transport. If the player has **any** of the matching list of items, this transport is valid */
     @Getter
-    private List<List<Integer>> multiitemIdRequirements = new ArrayList<>();
+    private List<List<Integer>> itemIdRequirements = new ArrayList<>();
 
     /** Whether the transport is an agility shortcut */
     @Getter
@@ -161,15 +157,7 @@ public class Transport {
         }
 
         if (fieldMap.containsKey("Item ID Requirements")) {
-            String[] itemIds = fieldMap.get("Item ID Requirements").split(";");
-            for (String item : itemIds) {
-                int itemId = Integer.parseInt(item);
-                itemIdRequirements.add(itemId);
-            }
-        }
-
-        if (fieldMap.containsKey("Multi-Item ID Requirements")) {
-            String[] itemIdsList = fieldMap.get("Multi-Item ID Requirements").split(";");
+            String[] itemIdsList = fieldMap.get("Item ID Requirements").split(";");
             for (String listIds : itemIdsList)
             {
                 List<Integer> multiitemList = new ArrayList<>();
@@ -178,7 +166,7 @@ public class Transport {
                     int itemId = Integer.parseInt(item);
                     multiitemList.add(itemId);
                 }
-                multiitemIdRequirements.add(multiitemList);
+                itemIdRequirements.add(multiitemList);
             }
         }
 
