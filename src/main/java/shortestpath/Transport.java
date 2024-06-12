@@ -33,9 +33,9 @@ public class Transport {
     @Getter
     private List<Quest> quests = new ArrayList<>();
 
-    /** The ids of items required to use this transport. If the player has **any** matching item, this transport is valid */
+    /** The ids of items required to use this transport. If the player has **any** of the matching list of items, this transport is valid */
     @Getter
-    private List<Integer> itemIdRequirements = new ArrayList<>();
+    private List<List<Integer>> itemIdRequirements = new ArrayList<>();
 
     /** Whether the transport is an agility shortcut */
     @Getter
@@ -84,6 +84,10 @@ public class Transport {
     /** Whether the transport is a player-held item */
     @Getter
     private boolean isPlayerItem;
+
+    /** Whether the transport is a spell teleport */
+    @Getter
+    private boolean isSpellTeleport;
 
     /** The additional travel time */
     @Getter
@@ -153,10 +157,16 @@ public class Transport {
         }
 
         if (fieldMap.containsKey("Item ID Requirements")) {
-            String[] itemIds = fieldMap.get("Item ID Requirements").split(";");
-            for (String item : itemIds) {
-                int itemId = Integer.parseInt(item);
-                itemIdRequirements.add(itemId);
+            String[] itemIdsList = fieldMap.get("Item ID Requirements").split(";");
+            for (String listIds : itemIdsList)
+            {
+                List<Integer> multiitemList = new ArrayList<>();
+                String[] itemIds = listIds.split(",");
+                for (String item : itemIds) {
+                    int itemId = Integer.parseInt(item);
+                    multiitemList.add(itemId);
+                }
+                itemIdRequirements.add(multiitemList);
             }
         }
 
@@ -169,6 +179,10 @@ public class Transport {
         }
         if (TransportType.PLAYER_ITEM.equals(transportType)) {
             // Item transports should always have a non-zero wait, so the pathfinder doesn't calculate the cost by distance
+            this.wait = Math.max(this.wait, 1);
+        }
+        if (TransportType.SPELL_TELEPORT.equals(transportType)) {
+            // Spell transports should always have a non-zero wait, so the pathfinder doesn't calculate the cost by distance
             this.wait = Math.max(this.wait, 1);
         }
 
@@ -187,7 +201,7 @@ public class Transport {
         }
 
         if (fieldMap.containsKey("Varbits")) {
-            for (String varbitCheck : fieldMap.get("Varbits").split(DELIM)) {
+            for (String varbitCheck : fieldMap.get("Varbits").split(";")) {
                 var varbitParts = varbitCheck.split("=");
                 int varbitId = Integer.parseInt(varbitParts[0]);
                 int varbitValue = Integer.parseInt(varbitParts[1]);
@@ -206,6 +220,7 @@ public class Transport {
         isTeleportationLever = TransportType.TELEPORTATION_LEVER.equals(transportType);
         isTeleportationPortal = TransportType.TELEPORTATION_PORTAL.equals(transportType);
         isPlayerItem = TransportType.PLAYER_ITEM.equals(transportType);
+        isSpellTeleport = TransportType.SPELL_TELEPORT.equals(transportType);
     }
 
     /** The skill level required to use this transport */
@@ -339,6 +354,7 @@ public class Transport {
         addTransports(transports, "/levers.tsv", TransportType.TELEPORTATION_LEVER);
         addTransports(transports, "/portals.tsv", TransportType.TELEPORTATION_PORTAL);
         addTransports(transports, "/items.tsv", TransportType.PLAYER_ITEM);
+        addTransports(transports, "/spell_teleports.tsv", TransportType.SPELL_TELEPORT);
 
         return transports;
     }
@@ -356,5 +372,6 @@ public class Transport {
         TELEPORTATION_LEVER,
         TELEPORTATION_PORTAL,
         PLAYER_ITEM,
+        SPELL_TELEPORT,
     }
 }
